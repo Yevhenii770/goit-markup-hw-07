@@ -553,6 +553,7 @@ gap: 30px;
 }
 
 .footer-subscription-mail {
+    outline: none;
     width:358px ;
     height: 50px; 
     margin-right: 12px;
@@ -564,6 +565,11 @@ gap: 30px;
     border-radius: 4px;
     color: var(--white-color);
 
+
+}
+
+.footer-subscription-mail::placeholder {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-subscription-btn {
@@ -584,7 +590,7 @@ gap: 30px;
     justify-content: center;
     align-items: center;
     gap: 10px;
-
+    border: none;
 }
 
 .footer-subscription-box {
@@ -836,20 +842,30 @@ overflow: hidden;
 }
 
 
-.form-coment {
-    padding: 12px 16px;
-    width:100%
-}
+
 
 /* Изменение окна для коментариев */
 .form-coment {
-resize:none;
+
+    resize:none;
+    
+    padding: 12px 16px;
+
+    width: 100%
 }
+
+.form-coment::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
+
+
+
 
 .register-input {
     outline: transparent;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    font-size: 14px;
 
     transition-property: border-color;
     transition-duration: 250ms;
