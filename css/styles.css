@@ -770,6 +770,10 @@ overflow: hidden;
     transition: visibility 1000ms, opacity 1000ms ;
 }
 
+.Modal-window:hover,
+.Modal-window:focus{
+ fill: var(--accent-color);
+}
 .modal { 
 /* Centering absolutely positioned elements */
     position: absolute;
@@ -909,9 +913,48 @@ overflow: hidden;
     margin-bottom: 20px;
 }
 
+
+
+    /* checkbox btn */
+
 .register-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
     margin-bottom: 30px;
 }
+
+.register-checkbox-item:checked + .register-checkbox-icon {
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    border-color:var(--accent-color);
+    
+    background-origin: border-box;
+}
+
+.register-checkbox-icon {
+    
+    width: 16px;
+    height: 15px;
+
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
+}
+
+.register-checkbox-item {
+    /* скрываем оригинальный чек бокс */
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+
+    /* end */
+
+
+
+
 
 .register-form-text {
     font-size: 12px;
@@ -937,7 +980,7 @@ overflow: hidden;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.register-input:focus + .register-icon {
+.register-input:focus ~ .register-icon {
     fill: var(--accent-color);
 }
 
