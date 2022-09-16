@@ -51,6 +51,9 @@ body {
     
 }
 
+.hidden {
+    visibility: hidden;
+}
 /* Шапка */
 .header {
     border: 1px solid #ECECEC;
@@ -943,10 +946,13 @@ overflow: hidden;
 
 .register-checkbox-item {
     /* скрываем оригинальный чек бокс */
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
     position: absolute;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    white-space: nowrap;
+    width: 1px;
 
 }
 
