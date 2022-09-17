@@ -554,32 +554,30 @@ gap: 30px;
 
  /* Футер форма регистрации */
 
-.footer-subscription {
-    display: flex;
-}
+
 
 .footer-subscription-label {
-    display: inline-block;
+    display: flex;
 }
 
 
 .footer-subscription-title {
+    display: inline-block;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-color);
-
-    display: block;
     margin-bottom: 20px;
 }
 
 .footer-link {
-    margin-right: 93px;
+    margin-right: auto;
 }
 
 .footer-subscription-mail {
+    display: block;
     outline: none;
     width:358px ;
     height: 50px; 
@@ -606,7 +604,6 @@ gap: 30px;
     letter-spacing: 0.06em;
 
     padding: 10px 28px;
-    margin-top: auto;
 
     color: var(--white-color);
     background: var(--accent-color);
@@ -917,6 +914,7 @@ overflow: hidden;
 .register-label {
     display: flex;
     flex-direction: column; 
+    margin-bottom: 20px;
 }
 
 .register-btn {
@@ -936,13 +934,6 @@ overflow: hidden;
     border: 0px;
     cursor: pointer;
 }
-
-
-
-.register-label:last-child {
-    margin-bottom: 20px;
-}
-
 
 
     /* checkbox btn */
