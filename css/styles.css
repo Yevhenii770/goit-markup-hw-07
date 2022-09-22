@@ -90,7 +90,7 @@ body {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-list .list-item:not(:last-child) {
+.example__list:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -188,11 +188,14 @@ border-bottom: 1px solid #ECECEC;
     list-style: none;
     text-decoration: none;
     margin-left: auto;
+    gap: 30px;
 }
 
 .site-nav .item + .item {
     margin-right: 50px;
 }
+
+
 /* Герой */
 .main {
     padding-top: 200px;
@@ -287,29 +290,31 @@ border-bottom: 1px solid #ECECEC;
 .section {
     padding-bottom: 94px;
 }
-.sectiont-title {
+.container__title {
     text-align: center;
     font-weight: 700;
     font-size: 36px;
-    line-height:calc(42 / 36);
+    line-height: calc(42 / 36);
     letter-spacing: 0.03em;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.section .container .list .list-item:not(:last-child) {
+.works {
+    display: flex;
+    
+}
+.example__list:not(:last-child) {
     margin-right: 30px;
 }
-.section .list .list-item {
-    text-align: center;
-}
-.list-work {
+.example__list {
+    margin-right: 30px;
     position: relative;
     height: 294px;
 }
 
-.our-work {
+.example__title {
     font-weight: 700;
     line-height: calc(16 / 14);
     text-align: center;
@@ -357,6 +362,10 @@ border-bottom: 1px solid #ECECEC;
     padding-bottom: 30px;
 }
 
+.section .list .list-item {
+    text-align: center;
+
+}
 /* Socials link */
 .social-list {
 display: flex;
@@ -720,6 +729,7 @@ margin-bottom: 9px;
 .list {
     display: flex;
     flex-wrap: wrap;
+    /* gap: 30px; */
 }
 
 .project-div {
