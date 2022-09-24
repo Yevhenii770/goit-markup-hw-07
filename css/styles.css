@@ -5,24 +5,24 @@
 /* номер в конце color: rgba(255, 255, 255, 0.6); */
 /* вторичный цвет фона #F5F4FA */
 
-html {
+/* html {
     box-sizing: border-box;
 }
 *,
 *::before,
 *::after {
     box-sizing: border-box;
-}
+} */
 
-.container {
+/* .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
-}
+} */
 
-:root {
+/* :root {
 --primary-text-color: #212121; 
 --title-text-color: #757575;
 --accent-color: #2196F3;
@@ -32,9 +32,9 @@ html {
 --secondary-font: Raleway, sans-serif;
 --modal-text-color:#757575;
 
-}
+} */
 
- h1,
+ /* h1,
  h2,
  h3,
  h4,
@@ -42,20 +42,20 @@ html {
  ul {
     margin: 0px;
     padding: 0px;
- }
+ } */
 
-body {
+/* body {
     background-color: #FFFFFF;
     color: var(--primary-text-color);
     font-family: var(--main-fonts)
     
-}
+} */
 
-.hidden {
+/* .hidden {
     visibility: hidden;
-}
+} */
 /* Шапка */
-.header {
+/* .header {
     border: 1px solid #ECECEC;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -90,25 +90,25 @@ body {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-list .list-item:not(:last-child) {
+.example__list:not(:last-child) {
     margin-right: 50px;
 }
 
 .site-nav {
     display: flex;
-}
+} */
 
-ul {
+/* ul {
     list-style-type: none;
     padding-inline-start: 0;
-}
+} */
 
-.border {
-border-bottom: 1px solid #ECECEC;
-}
+/* .border {
+    border-bottom: 1px solid #ECECEC;
+} */
 /* Site nav */
 
-.site-nav .nav-item:not(:last-child) {
+/* .site-nav .nav-item:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -124,8 +124,20 @@ border-bottom: 1px solid #ECECEC;
 .site-nav .link {
     padding-top: 32px;
     padding-bottom: 32px;
-}
+} */
 
+/* .site-nav .item + .item {
+    margin-right: 50px;
+} */
+
+/* .site-nav .link.current {
+    color: var(--accent-color);
+    border-bottom: 4px solid var(--accent-color);
+    border-radius: 1px;
+    
+} */
+
+/* 
 .contact-link {
     color: var(--title-text-color);
     text-decoration: none;
@@ -165,22 +177,16 @@ border-bottom: 1px solid #ECECEC;
 
 .contact-link:hover,
 .contact-link:focus {
- color: var(--accent-color);
+    color: var(--accent-color);
 }
 .telephone:hover,
 .telephone:focus {
     color: var(--accent-color);
 }
-/* currentColor НАСЛЕДОВАНИЯ ЦВЕТА И ЭФЕКТА ХОВЕРА У РОДИТЕЛЬСКОГО ЭЛЕМЕНТА */
+currentColor НАСЛЕДОВАНИЯ ЦВЕТА И ЭФЕКТА ХОВЕРА У РОДИТЕЛЬСКОГО ЭЛЕМЕНТА
 .contacts-mail,
 .contacts-smartphone {
     fill: currentColor;
-}
-.site-nav .link.current {
-    color: var(--accent-color);
-    border-bottom: 4px solid var(--accent-color);
-    border-radius: 1px;
-    
 }
 
 .header-list {
@@ -188,38 +194,41 @@ border-bottom: 1px solid #ECECEC;
     list-style: none;
     text-decoration: none;
     margin-left: auto;
-}
+    gap: 30px;
+} */
 
-.site-nav .item + .item {
-    margin-right: 50px;
-}
+
+
 /* Герой */
-.main {
+
+/* .main {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
     background-color: #2F303A;
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-    url(../images/logo.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/logo.jpg);
     max-width: 1600px;
     max-height: 600px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .main-title {
     margin-top: 0;
     margin-bottom: 30px;
     color: var(--white-color);
-    font-family:var(--main-fonts);
+    font-family: var(--main-fonts);
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
     letter-spacing: 0.06em;
     width: 696px;
     margin-left: auto;
-    margin-right: auto;    
-}
-.btn {
+    margin-right: auto;
+} */
+
+/* .btn {
     margin-top: 40px;
     display: inline-block;
     padding: 10px 32px;
@@ -234,12 +243,10 @@ border-bottom: 1px solid #ECECEC;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
-    letter-spacing: 0.06em;
-    
-       
-}
+    letter-spacing: 0.06em;     
+} */
 /* Описание */
-.benefits-list {
+/* .benefits-list {
     flex-wrap: wrap;
     list-style-type: none;
     display: flex;
@@ -281,35 +288,37 @@ border-bottom: 1px solid #ECECEC;
     align-items: center;
     margin-bottom: 30px;
 }
-
+ */
 
 /* Чим мы займаємося */
-.section {
+/* .section {
     padding-bottom: 94px;
 }
-.sectiont-title {
+.container__title {
     text-align: center;
     font-weight: 700;
     font-size: 36px;
-    line-height:calc(42 / 36);
+    line-height: calc(42 / 36);
     letter-spacing: 0.03em;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.section .container .list .list-item:not(:last-child) {
+.works {
+    display: flex;
+    
+}
+.example__list:not(:last-child) {
     margin-right: 30px;
 }
-.section .list .list-item {
-    text-align: center;
-}
-.list-work {
+.example__list {
+    margin-right: 30px;
     position: relative;
     height: 294px;
 }
 
-.our-work {
+.example__title {
     font-weight: 700;
     line-height: calc(16 / 14);
     text-align: center;
@@ -324,10 +333,10 @@ border-bottom: 1px solid #ECECEC;
     align-items: center;
     height: 70px;
     width: 100%;
-}
+} */
 
 /* Наша команда */
-.our-team {
+/* .our-team {
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: var(--bgc-teams);
@@ -357,8 +366,12 @@ border-bottom: 1px solid #ECECEC;
     padding-bottom: 30px;
 }
 
+.section .list .list-item {
+    text-align: center;
+
+} */
 /* Socials link */
-.social-list {
+/* .social-list {
 display: flex;
 gap: 10px;
 justify-content: center;
@@ -384,27 +397,27 @@ justify-content: center;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* Смена текста при ховере фокусе */
 
-/* Выбирается элемент ".socials-icon" и к нему применяется hover и focus при наведении на родительский элемент ".social-link" */
+Выбирается элемент ".socials-icon" и к нему применяется hover и focus при наведении на родительский элемент ".social-link"
  .social-link:hover .socials-icon,
  .social-link:focus .socials-icon {
     fill: var(--white-color);
 }
 
-/* Смена фона при ховере фокусе */
+Смена фона при ховере фокусе
 .social-link:hover,
 .social-link:focus {
     background-color:var(--accent-color);
 }
-/* Постоянные клиенты */
+Постоянные клиенты
 .section-clients {
     padding-top: 94px;
     padding-bottom: 79px;
-}
+} */
 
+/* компании */
 
-.company-list {
+/* .company-list {
 display: flex;
 align-items: center;
 justify-content: center;
@@ -436,18 +449,19 @@ gap: 30px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Выбирает элемент COMPANY-ICON и применяет к нему ховер и фокус при наведении на линк! */
+Выбирает элемент COMPANY-ICON и применяет к нему ховер и фокус при наведении на линк!
 .company-link:hover .company-icon,
 .company-link:focus .company-icon {
     fill: var(--accent-color);
 }
-/* Меняет цвет при ховере и фокусе ссылки */
+Меняет цвет при ховере и фокусе ссылки
 .company-link:hover,
 .company-link:focus {
     border: 1px solid var(--accent-color);
-}
+} */
+
 /* Подвал */ 
-.footer-container {
+/* .footer-container {
     margin-right: 70px;
 }
 .footer {
@@ -539,20 +553,18 @@ gap: 30px;
 
 
 
-/* Выбирается элемент ".footer-socials-icon" и к нему применяется hover и focus при наведении на родительский элемент ".social-link" */
+
 .footer-social-link:hover .footer-socials-icon,
 .footer-social-link:focus .footer-socials-icon {
     fill: var(--white-color);
 }
 
-/* Смена фона при ховере фокусе */
+
 .footer-social-link:hover,
 .footer-social-link:focus {
     background-color: var(--accent-color);
 }
 
-
- /* Футер форма регистрации */
 
 
 
@@ -617,20 +629,21 @@ gap: 30px;
     border: none;
 }
 
-/* .footer-subscription-box {
-    display: flex;
-} */
 
 .footer-subscription-plane {
     fill: var(--white-color);
-}
+} */
+
+
+
 
 /* ВТОРАЯ СТРАНИЦА */
-.section-portfolio {
+
+/* .section-portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-/* Наші роботи */
+Наші роботи
 .btn-portfolio {
     font-family: inherit;
     font-weight: 500;
@@ -720,6 +733,7 @@ margin-bottom: 9px;
 .list {
     display: flex;
     flex-wrap: wrap;
+   
 }
 
 .project-div {
@@ -734,11 +748,11 @@ margin-bottom: 9px;
 
 
 
-/* Pop-up windows "thumb" */
+Pop-up windows "thumb"
 
 .team-thumb {
 position: relative;
-/* hidden by text overflow */
+
 overflow: hidden;
 }
 .overlay {
@@ -749,7 +763,8 @@ overflow: hidden;
     position: absolute; 
     top: 0;
     left: 0;
-/* starting point */
+
+
     transform: translateY(101%);
 
     width: 100%;
@@ -774,9 +789,10 @@ overflow: hidden;
 }
 .link-work:hover .overlay,
 .link-work:focus .overlay {
-    /* hover point */
+    
+
     transform: translateY(0);
-}
+} */
 
 
 
