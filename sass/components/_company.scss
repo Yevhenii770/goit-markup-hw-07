@@ -1,44 +1,46 @@
-.company-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  gap: 30px;
-}
-
-.company-link {
-  width: 170px;
-  height: 92px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.company-icon {
-  fill: #afb1b8;
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Выбирает элемент COMPANY-ICON и применяет к нему ховер и фокус при наведении на линк! */
-.company-link:hover .company-icon,
-.company-link:focus .company-icon {
-  fill: var(--accent-color);
-}
-/* Меняет цвет при ховере и фокусе ссылки */
-.company-link:hover,
-.company-link:focus {
-  border: 1px solid var(--accent-color);
-}
-.section-clients {
+.clients {
   padding-top: 94px;
   padding-bottom: 79px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    gap: 30px;
+  }
+
+  &__link {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon {
+    fill: #afb1b8;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Меняет цвет при ховере и фокусе ссылки */
+  &__link:hover,
+  &__link:focus {
+    border: 1px solid var(--accent-color);
+  }
+
+  /* Выбирает элемент clients__link и применяет к нему ховер и фокус при наведении на линк! */
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: var(--accent-color);
+  }
 }

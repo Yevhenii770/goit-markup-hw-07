@@ -452,7 +452,13 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.company-list {
+.clients {
+  padding-top: 94px;
+  padding-bottom: 79px;
+  /* Меняет цвет при ховере и фокусе ссылки */
+  /* Выбирает элемент clients__link и применяет к нему ховер и фокус при наведении на линк! */
+}
+.clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,8 +471,7 @@ body {
   border-radius: 4px;
   gap: 30px;
 }
-
-.company-link {
+.clients__link {
   width: 170px;
   height: 92px;
   display: -webkit-box;
@@ -487,8 +492,7 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.company-icon {
+.clients__icon {
   fill: #afb1b8;
   -webkit-transition-property: fill;
   transition-property: fill;
@@ -497,22 +501,11 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* Выбирает элемент COMPANY-ICON и применяет к нему ховер и фокус при наведении на линк! */
-.company-link:hover .company-icon,
-.company-link:focus .company-icon {
-  fill: var(--accent-color);
-}
-
-/* Меняет цвет при ховере и фокусе ссылки */
-.company-link:hover,
-.company-link:focus {
+.clients__link:hover, .clients__link:focus {
   border: 1px solid var(--accent-color);
 }
-
-.section-clients {
-  padding-top: 94px;
-  padding-bottom: 79px;
+.clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
+  fill: var(--accent-color);
 }
 
 .footer-container {
@@ -980,7 +973,6 @@ body {
   color: var(--accent-color);
 }
 
-/* ВТОРАЯ СТРАНИЦА */
 .section-portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
