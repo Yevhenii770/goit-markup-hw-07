@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Шапка-->
@@ -140,7 +140,6 @@
               <h3 class="example__title">Десктопні додатки</h3>
             </li>
 
-
             <li class="example__list">
               <img
                 class="example__photo"
@@ -167,22 +166,24 @@
 
       <!--Наша команда-->
 
-      <section class="section our-team">
+      <section class="section card">
         <div class="container">
           <h2 class="container__title">Наша команда</h2>
-          <ul class="list">
-            <li class="list-item">
+          <ul class="card__list list">
+            <li class="card__item">
               <img
-                class="team-card"
+                class="card__img"
                 src="./images/img.jpg"
                 alt="Team card"
                 width="270"
                 height="260"
               />
-              <div class="card-name">
-                <h3 class="name-team">Ігор Дем'яненко</h3>
-                <p class="team-position" lang="en">Product Designer</p>
-                <ul class="social-list">
+
+              <div class="card__box">
+                <h3 class="card__name">Ігор Дем'яненко</h3>
+                <p class="card__position" lang="en">Product Designer</p>
+
+                <ul class="social__list">
                   <li class="social-item">
                     <a
                       class="social-link"
@@ -196,6 +197,7 @@
                       </svg>
                     </a>
                   </li>
+
                   <li class="social-item">
                     <a
                       class="social-link"
@@ -209,6 +211,7 @@
                       </svg>
                     </a>
                   </li>
+
                   <li class="social-item">
                     <a
                       class="social-link"
@@ -222,6 +225,7 @@
                       </svg>
                     </a>
                   </li>
+
                   <li class="social-item">
                     <a
                       class="social-link"
@@ -239,19 +243,19 @@
               </div>
             </li>
 
-            <li class="list-item">
+            <li class="card__item">
               <img
-                class="team-card"
+                class="card__img"
                 src="./images/img(1).jpg"
                 alt="Team card"
                 width="270"
                 height="260"
               />
 
-              <div class="card-name">
-                <h3 class="name-team">Ольга Рєпіна</h3>
-                <p class="team-position" lang="en">Frontend Developer</p>
-                <ul class="social-list">
+              <div class="card__box">
+                <h3 class="card__name">Ольга Рєпіна</h3>
+                <p class="card__position" lang="en">Frontend Developer</p>
+                <ul class="social__list">
                   <li class="social-item">
                     <a
                       class="social-link"
@@ -307,18 +311,18 @@
                 </ul>
               </div>
             </li>
-            <li class="list-item">
+            <li class="card__item">
               <img
-                class="team-card"
+                class="card__img"
                 src="./images/img(2).jpg"
                 alt="Team card"
                 width="270"
                 height="260"
               />
-              <div class="card-name">
-                <h3 class="name-team">Микола Тарасов</h3>
-                <p class="team-position" lang="en">Marketing</p>
-                <ul class="social-list">
+              <div class="card__box">
+                <h3 class="card__name">Микола Тарасов</h3>
+                <p class="card__position" lang="en">Marketing</p>
+                <ul class="social__list">
                   <li class="social-item">
                     <a
                       class="social-link"
@@ -374,18 +378,18 @@
                 </ul>
               </div>
             </li>
-            <li class="list-item">
+            <li class="card__item">
               <img
-                class="team-card"
+                class="card__img"
                 src="./images/img(3).jpg"
                 alt="Team card"
                 width="270"
                 height="260"
               />
-              <div class="card-name">
-                <h3 class="name-team">Михайло Єрмаков</h3>
-                <p class="team-position" lang="en">UI Designer</p>
-                <ul class="social-list">
+              <div class="card__box">
+                <h3 class="card__name">Михайло Єрмаков</h3>
+                <p class="card__position" lang="en">UI Designer</p>
+                <ul class="social__list">
                   <li class="social-item">
                     <a
                       class="social-link"
@@ -625,11 +629,10 @@
         <form action="#">
           <div class="footer-subscription">
             <span class="footer-subscription-title">
-                Підпишіться на розсилку</span
-              >
+              Підпишіться на розсилку</span
+            >
 
             <label class="footer-subscription-label">
-              
               <input
                 class="footer-subscription-mail"
                 type="email"
@@ -637,11 +640,11 @@
                 placeholder="E-mail"
               />
               <button class="footer-subscription-btn" type="submit">
-              Підписатися
-              <svg class="footer-subscription-plane" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
+                Підписатися
+                <svg class="footer-subscription-plane" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
             </label>
           </div>
         </form>
